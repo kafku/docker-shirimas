@@ -6,7 +6,7 @@ RUN apt-get update && \
 	apt-get install -y --no-install-recommends \
 	git \
 	sqlite3 libsqlite3 \
-	mecab libmecab-dev mecab-ipadic-utf8 \
+	mecab libmecab-dev mecab-ipadic-utf8 && \
 	apt-get -y autoremove && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
