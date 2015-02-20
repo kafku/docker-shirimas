@@ -11,7 +11,7 @@ RUN apt-get update && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
 
-RUN pip install --ignore-installed mecab-python3 pandas requests
+RUN pip install mecab-python3 pandas requests
 RUN git clone https://github.com/oshikiri/shirimas.git --recursive
 
 WORKDIR shirimas/src
