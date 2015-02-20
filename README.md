@@ -4,11 +4,12 @@ Dockerfile for [oshikiri/shirimas](https://github.com/oshikiri/shirimas).
 ## Usage
 [Docker image](https://registry.hub.docker.com/u/kafku/docker-shirimas/) is available on [Docker Hub Registry](https://registry.hub.docker.com/).
 Create channel named _shiritori_ for your slack team.
-Add *Bots* integration and get API token.
+Access to [Slack WEB API page](https://api.slack.com/web) and create API token for your team.
 
 ```sh
 docker run -d --name=shirimas \
-    -e SLACKTOKEN=API_token_for_Bots_integration \
+    -e SLACKTOKEN=Slack_API_token \
+	-v /slack_shirimas:/shirimas/src/db \
 	kafku/docker-shirimas:latest
 ```
 
