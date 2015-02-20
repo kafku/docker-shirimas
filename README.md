@@ -8,7 +8,15 @@ Add `Bots` integration and check API token.
 ```sh
 docker run -d --name=shirimas \
     -e SLACKTOKEN=API_token_for_Bots_integration \
-	kafku/shirimas:latest
+	kafku/docker-shirimas:latest
 ```
+
+## Build image
+```sh
+git clone https://github.com/kafku/docker-shirimas.git
+docker build -t kafku/docker-shirimas docker-shirimas/
+```
+
+
 
 
