@@ -1,4 +1,4 @@
-FROM python:3.4.2-wheezy
+FROM python:3.4.2
 
 MAINTAINER Kazuki Fukui
 
