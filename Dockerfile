@@ -15,8 +15,9 @@ RUN pip install mecab-python3 numpy pandas requests
 RUN git clone https://github.com/oshikiri/shirimas.git
 
 WORKDIR shirimas/src
+RUN git submodule init
+RUN git submodule update
 RUN touch mysetup.py
-RUN git clone https://github.com/oshikiri/SlackBot.git
 
 VOLUME /shirimas/src/db
 CMD python3 autoexec.py
