@@ -5,7 +5,7 @@ MAINTAINER Kazuki Fukui
 RUN apt-get update && \
 	apt-get install -y --no-install-recommends \
 	git \
-	sqlite3 libsqlite3 \
+	sqlite3 libsqlite3-dev \
 	mecab libmecab-dev mecab-ipadic-utf8 && \
 	apt-get -y autoremove && \
 	apt-get clean && \
